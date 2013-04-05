@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.wbyoko.adventure.shiny"
+    versionCode="10" 
+    version   = "1.0.0">
+
+    <name>Shiny Adventure</name>
+
+    <description>
+        localstorage vs. css3 animations vs. phonegap.... who will win?
+    </description>
+
+    <author href="https://www.wbyoko.com" email="email@wbyoko.com">
+        William Bagayoko
+    </author>
+</widget>
