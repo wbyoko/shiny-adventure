@@ -11,10 +11,6 @@
   dummyStr = 'flash bounce shake tada swing wobble wiggle pulse flip flipInX flipOutX flipInY flipOutY fadeIn fadeInUp fadeInDown fadeInLeft fadeInRight fadeInUpBig fadeInDownBig fadeInLeftBig fadeInRightBig fadeOut fadeOutUp fadeOutDown fadeOutLeft fadeOutRight fadeOutUpBig fadeOutDownBig fadeOutLeftBig fadeOutRightBig bounceIn bounceInDown bounceInUp bounceInLeft bounceInRight bounceOut bounceOutDown bounceOutUp bounceOutLeft bounceOutRight rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight lightSpeedIn lightSpeedOut hinge rollIn rollOut';
   animationList = dummyStr.split(' ');
   element = document.getElementById('animate-me');
-  element.className = 'animated';
-  element.style.display = "block";
-  element.style.width = "100px";
-  element.style.height = "100px";
 
   for (i = 100; i > 0; i--) {
     randAnim = animationList[Math.floor(Math.random() * animationList.length)];
