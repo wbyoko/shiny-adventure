@@ -21,10 +21,6 @@
   dummyStr = 'flash bounce shake tada swing wobble wiggle pulse flip flipInX flipOutX flipInY flipOutY fadeIn fadeInUp fadeInDown fadeInLeft fadeInRight fadeInUpBig fadeInDownBig fadeInLeftBig fadeInRightBig fadeOut fadeOutUp fadeOutDown fadeOutLeft fadeOutRight fadeOutUpBig fadeOutDownBig fadeOutLeftBig fadeOutRightBig bounceIn bounceInDown bounceInUp bounceInLeft bounceInRight bounceOut bounceOutDown bounceOutUp bounceOutLeft bounceOutRight rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight lightSpeedIn lightSpeedOut hinge rollIn rollOut';
   animationList = dummyStr.split(' ');
   element = document.getElementById('animate-me');
-  
-  element.addEventListener('click', function () {
-    testAnim(30);
-  }, false);
 
   PrefixedEvent(element, "AnimationStart", function () {
     timerA = Date.now();
@@ -64,7 +60,7 @@
 
   function doLSOP () {
     timerLS = Date.now();
-    console.log('ls op started ' + (Date.now() - timerA) + "ms later");
+    console.log('ls op started ' + (timerLS - timerA) + "ms later");
 
     // do localstorage operation now
     for (s = 100; s > 0; s--) {
@@ -73,6 +69,9 @@
         dummyVar = localStorage.getItem('' + x);
       }
     }
+    
     console.log("ls op during " + randAnim + " has completed in " + (Date.now() - timerLS) + "ms");
   }
+  
+  testAnim(30);
 }).call(this);
