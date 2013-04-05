@@ -12,7 +12,7 @@
   animationList = dummyStr.split(' ');
   element = document.getElementById('animate-me');
   
-  for (x = 100; x > 0; x--) { dummyStr += dummyStr; }
+  for (x = 1000; x > 0; x--) { dummyStr += dummyStr; }
 
   for (i = 100; i > 0; i--) {
     randAnim = animationList[Math.floor(Math.random() * animationList.length)];
@@ -26,7 +26,7 @@
     
     timerLS = Date.now();
     // do localstorage operation now
-    for (x = 10dummyStr0; x > 0; x--) {
+    for (x = 10000; x > 0; x--) {
       localStorage.setItem('' + x, dummyStr);
       dummyVar = localStorage.getItem('' + x);
     }
@@ -34,4 +34,5 @@
     
     while (element.className.contains(randAnim) {}
   }
+  console.log("v 1.0.1");
 }).call(this);
