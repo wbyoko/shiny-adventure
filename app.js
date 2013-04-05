@@ -63,7 +63,7 @@
     console.log('ls op started ' + (timerLS - timerA) + "ms later");
 
     // do localstorage operation now
-    for (s = 100; s > 0; s--) {
+    for (s = 200; s > 0; s--) {
       for (x = 200; x > 0; x--) {
         localStorage.setItem('' + x, dummyStr);
         dummyVar = localStorage.getItem('' + x);
