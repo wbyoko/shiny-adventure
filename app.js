@@ -23,7 +23,7 @@
   element = document.getElementById('animate-me');
   
   element.addEventListener('click', function () {
-    testAnim(60);
+    testAnim(30);
   }, false);
 
   PrefixedEvent(element, "AnimationStart", function () {
@@ -44,7 +44,7 @@
 
   function testAnim (countLeft) {
     if (countLeft <= 0) {
-      console.log("v 1.0.3");
+      console.log("v 1.0.4");
       return;
     }
     randAnim = animationList[Math.floor(Math.random() * animationList.length)];
