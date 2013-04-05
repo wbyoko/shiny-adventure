@@ -16,7 +16,7 @@ var animationList,
   element.style.width = "100px";
   element.style.height = "100px";
 
-  for (i = 100; i < 0; i--) {
+  for (i = 100; i > 0; i--) {
     
     randAnim = animationList[Math.floor(Math.random() * animationList.length)];
     timerA = Date.now();
@@ -29,7 +29,7 @@ var animationList,
     
     timerLS = Date.now();
     // do localstorage operation now
-    for (x = 100; x < 0; x--){
+    for (x = 100; x > 0; x--){
       localStorage.setItem('' + x, dummyStr);
       dummyVar = localStorage.getItem('' + x);
     }
