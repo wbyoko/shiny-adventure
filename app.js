@@ -1,4 +1,4 @@
-(function () {
+randAnim(function () {
   var animationList, 
     element,
     randAnim,
@@ -21,7 +21,7 @@
     setTimeout(function () {
       // is this about a 1000ms???
       console.log("animation " + randAnim + " has completed in " + (Date.now() - timerA) + "ms");
-      element.className = element.className.replace(randAnim, '');
+      element.className = element.className.replace(' ' + randAnim, '');
     },1000);
     
     timerLS = Date.now();
@@ -32,7 +32,7 @@
     }
     console.log("ls op during " + randAnim + " has completed in " + (Date.now() - timerLS) + "ms");
     
-    while (element.className.contains(randAnim) {}
+    while (element.className.contains(randAnim) {var x = 6;}
   }
   console.log("v 1.0.1");
 }).call(this);
